@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/realworld
+    password: qstv$65843Li
+  jackson:
+    deserialization:
+      unwrap-root-value: true #jackson 反序列化
+mybatis:
+  configuration:
+    cache-enabled: true # 允许二级缓存
+    default-statement-timeout: 3000 # 默认最大响应时间
+    map-underscore-to-camel-case: true # 驼峰命名法转换
+    use-generated-keys: true # 允许jdbc生成主键
+  type-handlers-package: com.realworld.mapper
+  mapper-locations: mapper/*.xml
+server:
+  port: 8081
+sa-token:
+  token-name: satoken
+  timeout: 259200
+  jwt-secret-key: skdajfjojgewnlnjsldknncvsdakjfo # jwt 密钥
+

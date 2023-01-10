@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/realworld
-    password: qstv$65843Li
+    password: root
   jackson:
     deserialization:
       unwrap-root-value: true #jackson 反序列化
